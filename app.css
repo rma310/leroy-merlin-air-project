@@ -1,0 +1,178 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  background-color: #67ac5b;
+  padding: 15px;
+  color: white;
+  font-weight: bold;
+  font-size: 1.25em;
+}
+
+.header {
+  margin-bottom: 5px;
+}
+
+.notification {
+  position: fixed;
+  bottom: 0;
+  width: 35%;
+  right: 0;
+}
+
+.message {
+  display: block;
+  padding: 8px;
+  text-align: center;
+  background-color: #67ac5b38;
+  margin: 10px;
+  border-radius: 6px;
+  font-size: 0.8em;
+  color: grey;
+  font-weight: bold;
+  border: 1px solid #67ac5b;
+}
+
+.vertical {
+  display: flex;
+}
+
+
+.vertical__left {
+  flex: 1;
+}
+
+.vertical__right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.bottom {
+  display: flex;
+  flex-direction: row;
+}
+
+.bottom__left {
+  flex: 1;
+}
+
+.bottom__right {
+  flex: 1;
+}
+
+.table-card {
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0px 3px 3px lightgrey;
+  margin: 10px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table caption {
+  text-align: left;
+}
+
+table caption div {
+  background-color: #67ac5b;
+  color: white;
+  padding: 15px;
+  font-weight: bold;
+  font-size: 0.9em;
+}
+
+table thead {
+  color: grey;
+  font-weight: bold;
+  text-align: left;
+}
+
+table thead tr {
+  font-size: 0.75em;
+  border-bottom: 1px solid lightgrey;
+}
+
+th,
+td {
+  padding: 15px;
+}
+
+tr {
+  font-size: 0.9em;
+}
+
+tr:not(:last-child) {
+  border-bottom: 1px solid lightgrey;
+}
+
+button {
+  border: 1px solid #67ac5b;
+  background-color: transparent;
+  color: #67ac5b;
+  padding: 2px 10px;
+  border-radius: 5px;
+  margin: 15px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+button:hover {
+  background-color: #67ac5b;
+  color: white;
+}
+
+button:disabled,
+button[disabled] {
+  cursor: not-allowed;
+  background-color: lightgrey;
+  color: white;
+  border: 1px solid white;
+}
+
+button svg path {
+  fill: #67ac5b;
+}
+
+button:hover svg path {
+  fill: white;
+}
+
+button:hover svg path {
+  fill: white;
+}
+
+button:disabled svg path,
+button[disabled] svg path {
+  fill: white;
+}
+
+button>span {
+  margin-left: 5px;
+}
+
+.disable-row {
+  color: lightgrey;
+}
+
+.placeholder {
+  text-align: center;
+  padding: 32px;
+  color: grey;
+  font-weight: bold;
+  font-size: 0.95em;
+}

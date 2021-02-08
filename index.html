@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Leroy Merlin - Air Project</title>
+  <link rel="stylesheet" href="app.css" />
+  <script type="module" src="dist/bundle.js"></script>
+</head>
+
+<body>
+  <!-- HEADER TEMPLATE -->
+  <template id="header">
+    <header class="header">
+      Leroy Merlin - Air Project
+    </header>
+  </template>
+
+  <!-- NOTIFICATION TEMPLATE -->
+  <template id="notification">
+    <div class="notification"></div>
+  </template>
+
+  <!-- LAYOUT TEMPLATE -->
+  <template id="layout">
+    <div class="vertical">
+      <div class="vertical__left" id="plans"></div>
+      <div class="vertical__right">
+        <div id="orders"></div>
+        <div class="bottom">
+          <div class="bottom__left" id="stocks"></div>
+          <div class="bottom__right" id="drones"></div>
+        </div>
+      </div>
+    </div>
+  </template>
+
+  <!-- PLANS BUTTON TEMPLATE -->
+  <template id="plans-button">
+    <button id="add-plan">
+      <svg height="24" width="24">
+        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" />
+      </svg>
+      <span>ADD PLAN</span>
+    </button>
+  </template>
+
+  <!-- TABLE TEMPLATE -->
+  <template id="base-table">
+    <div class="table-card">
+      <table>
+        <caption id="table-caption">
+          <div id="table-title"></div>
+        </caption>
+        <thead id="table-header">
+        </thead>
+        <tbody id="table-body">
+        </tbody>
+      </table>
+    </div>
+  </template>
+
+  <!-- PLACEHOLDER TEMPLATE -->
+  <template id="placeholder">
+    <tr>
+      <td class="placeholder" colspan="4">
+        No plan yet!
+      </td>
+    </tr>
+  </template>
+
+  <!-- DOM APP ROOT -->
+  <div id="app">
+  </div>
+</body>
+
+</html>
